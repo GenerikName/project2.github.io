@@ -1,0 +1,201 @@
+/* Border box declaration */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* page styling */
+
+body {
+  font-family: Arial, Geneva, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #2772B0;
+}
+
+.wrapper {
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  float: none;
+  background-color: #fff;
+}
+
+div img {
+  width: 100%;
+  max-width: 225px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+[class*="col-"] {
+  margin-left: 4%;
+  flex: 0 0 92%;
+}
+
+/* colors */
+
+.col-1 {
+  background-color: #A3CDD9;
+}
+
+.col-2 {
+  background-color: #FFFCE6;
+}
+
+.col-3 {
+  background-color: #F7D331;
+}
+
+.col-4 {
+  background-color: #BEB5AA;
+}
+
+/* rows */
+
+.lenny {
+  background-color: #A3CDD9;
+}
+
+.wendell {
+  background-color: #F7D331;
+}
+
+.riggs {
+  background-color: #BEB5AA;
+}
+
+.rambo {
+  background-color: #A3CDD9;
+}
+
+.remy {
+  background-color: #FFFCE6;
+}
+
+.zeke {
+  background-color: #A3CDD9;
+}
+
+.row-6 {
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem;
+
+  background-color: #333;
+}
+
+.row6-item {
+  flex: 1 1 150px;
+
+  padding: 1rem;
+
+  background-color: #F7D331;
+
+  text-align: center;
+}
+
+.row6-item h3 {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 480px) {
+
+  .col-1,
+  .col-2 {
+    flex: 0 0 44%;
+  }
+
+  .row-3 .lenny {
+    flex: 0 0 92%;
+  }
+
+  .row-3 .wendell {
+    flex: 0 0 92%;
+  }
+
+  .row-4 .riggs {
+    flex: 0 0 92%;
+  }
+
+  .row-5 .remy {
+    order: -1;
+    flex: 0 0 92%;
+  }
+
+  .row-5 .rambo {
+    order: 1;
+    flex: 0 0 44%;
+  }
+
+  .row-5 .zeke {
+    order: 2;
+    flex: 0 0 44%;
+  }
+
+  .row6-item {
+    flex: 1 1 28%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .col-1 {
+    flex: 0 0 20%;
+  }
+
+  .col-2 {
+    flex: 0 0 44%;
+  }
+
+  .row-3 .lenny {
+    flex: 0 0 20%;
+  }
+
+  .row-3 .wendell {
+    flex: 0 0 68%;
+  }
+
+  .row-4 .riggs {
+    flex: 0 0 92%;
+  }
+
+  .row-5 .rambo {
+    order: 1;
+    flex: 0 0 20%;
+  }
+
+  .row-5 .remy {
+    order: 2;
+    flex: 0 0 44%;
+  }
+
+  .row-5 .zeke {
+    order: 3;
+    flex: 0 0 20%;
+  }
+
+  .row6-item {
+    flex: 1 1 16%;
+  }
+
+}
